@@ -13,4 +13,4 @@ ec2_ami_id     = "ami-0ecaad63ed3668fca"
 
 ec2_user_data_install_apache = ""
 
-domain_name = "Pythonapp.orgramesh.com"
+#domain_name = "Pythonapp.orgramesh.com"
