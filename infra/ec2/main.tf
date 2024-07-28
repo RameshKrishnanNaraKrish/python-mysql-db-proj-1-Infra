@@ -36,6 +36,6 @@ resource "aws_instance" "python_mysql_db_proj_1_ec2" {
 }
 
 resource "aws_key_pair" "python_mysql_db_proj_1_public_key" {
-  key_name   = "aws_key"
+  key_name   = "jenkinsdemo"
   public_key = var.public_key
 }
