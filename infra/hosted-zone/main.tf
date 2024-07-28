@@ -7,7 +7,7 @@ output "hosted_zone_id" {
 }
 
 data "aws_route53_zone" "python_mysql_db_proj_1_orgramesh" {
-  name         = "orgramesh.com"
+  name         = var.domain_name
   private_zone = false
 }
 
