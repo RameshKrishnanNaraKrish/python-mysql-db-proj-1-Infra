@@ -1,5 +1,5 @@
-output "dev_proj_1_vpc_id" {
-  value = module.networking.dev_proj_1_vpc_id
+output "python_mysql_db_proj_1_vpc_id" {
+  value = module.networking.python_mysql_db_proj_1_vpc_id
 }
 
 /*output "ec2_ssh_string" {

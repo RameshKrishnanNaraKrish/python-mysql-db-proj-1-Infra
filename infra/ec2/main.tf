@@ -9,14 +9,14 @@ variable "user_data_install_apache" {}
 variable "ec2_sg_name_for_python_api" {}
 
 output "ssh_connection_string_for_ec2" {
-  value = format("%s%s", "ssh -i /home/ubuntu/keys/aws_ec2_terraform ubuntu@", aws_instance.dev_proj_1_ec2.public_ip)
+  value = format("%s%s", "ssh -i /Users/nkrk1/Downloads/jenkinsdemo ubuntu@", aws_instance.python_mysql_db_proj_1_ec2.public_ip)
 }
 
-output "dev_proj_1_ec2_instance_id" {
-  value = aws_instance.dev_proj_1_ec2.id
+output "python_mysql_db_proj_1_ec2_instance_id" {
+  value = aws_instance.python_mysql_db_proj_1_ec2.id
 }
 
-resource "aws_instance" "dev_proj_1_ec2" {
+resource "aws_instance" "python_mysql_db_proj_1_ec2" {
   ami           = var.ami_id
   instance_type = var.instance_type
   tags = {
@@ -35,7 +35,7 @@ resource "aws_instance" "dev_proj_1_ec2" {
   }
 }
 
-resource "aws_key_pair" "dev_proj_1_public_key" {
+resource "aws_key_pair" "python_mysql_db_proj_1_public_key" {
   key_name   = "aws_key"
   public_key = var.public_key
 }
